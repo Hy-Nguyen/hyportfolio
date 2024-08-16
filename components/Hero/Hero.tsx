@@ -47,12 +47,12 @@ export default function Hero() {
             </motion.p>
           </motion.div>
           <div className="flex w-fit flex-col gap-6">
-            <div className="h-fit w-fit rounded-xl bg-main-500 px-10 py-2 text-white transition-all duration-500 ease-in-out hover:scale-110 hover:bg-main-400">
+            <button className="h-fit w-fit rounded-xl bg-main-500 px-10 py-2 text-white transition-all duration-500 ease-in-out hover:scale-110 hover:bg-main-400">
               Connect with me on LinkedIn
-            </div>
-            <div className="h-fit w-fit rounded-xl bg-main-500 px-10 py-2 text-white transition-all duration-500 ease-in-out hover:scale-110 hover:bg-main-400">
+            </button>
+            <button className="h-fit w-fit rounded-xl bg-main-500 px-10 py-2 text-white transition-all duration-500 ease-in-out hover:scale-110 hover:bg-main-400">
               Contact me via email
-            </div>
+            </button>
           </div>
         </motion.div>
         <div className="flex h-full w-1/3 rounded-xl bg-main-700 transition-all duration-500 ease-in-out hover:scale-110 hover:bg-main-600"></div>
