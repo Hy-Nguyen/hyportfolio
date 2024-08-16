@@ -55,7 +55,13 @@ export default function Hero() {
             </button>
           </div>
         </motion.div>
-        <div className="flex h-full w-1/3 rounded-xl bg-main-700 transition-all duration-500 ease-in-out hover:scale-110 hover:bg-main-600"></div>
+        <motion.div
+          initial={{ opacity: 0, x: 500, backgroundColor: '#74685a' }}
+          animate={{ opacity: 1, x: 0, backgroundColor: '#74685a', transition: { duration: 0.7, delay: 1 } }}
+          transition={{ duration: 0.5 }}
+          whileHover={{ scale: 1.1, backgroundColor: '#8b7d6b' }}
+          className="flex h-full w-1/3 rounded-xl"
+        ></motion.div>
       </div>
     </div>
   );
