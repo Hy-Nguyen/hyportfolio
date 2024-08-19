@@ -10,7 +10,7 @@ export default function Hero() {
     >
       {/* body */}
 
-      <div className="flex h-fit w-full items-center justify-start gap-10 xl:max-w-screen-2xl">
+      <div className="flex h-fit w-full items-center justify-start gap-10 xl:max-w-screen-xl">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
