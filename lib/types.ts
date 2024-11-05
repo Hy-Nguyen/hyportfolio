@@ -5,8 +5,8 @@ export type Project = {
   description: string;
   image: StaticImageData | string;
   link: {
-    github: string;
-    live: string;
+    github?: string;
+    live?: string;
   };
 };
 

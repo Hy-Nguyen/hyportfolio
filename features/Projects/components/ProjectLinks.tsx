@@ -26,9 +26,9 @@ export default function ProjectLinks({
       {icon}
       <h1 className="relative">
         {label}
-        <div className="absolute -bottom-0 left-0 h-[1.5px] w-0 bg-black transition-all duration-300 group-hover/link:w-full" />
-        <div className="absolute -bottom-0 right-0 h-[1.5px] w-0 origin-right rotate-45 bg-black transition-all delay-300 duration-300 group-hover/link:w-1" />
-        <div className="absolute -bottom-0 right-0 h-[1.5px] w-0 origin-right -rotate-45 bg-black transition-all delay-300 duration-300 group-hover/link:w-1" />
+        <div className="absolute -bottom-0 left-0 h-[1.5px] w-0 bg-black transition-all duration-300 group-hover/link:w-1/2" />
+        <div className="absolute -bottom-0 right-1/2 h-[1.5px] w-0 origin-right rotate-45 bg-black transition-all delay-300 duration-300 group-hover/link:w-1" />
+        <div className="absolute -bottom-0 right-1/2 h-[1.5px] w-0 origin-right -rotate-45 bg-black transition-all delay-300 duration-300 group-hover/link:w-1" />
       </h1>
     </Link>
   );

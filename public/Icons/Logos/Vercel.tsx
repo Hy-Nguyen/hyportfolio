@@ -1,6 +1,7 @@
 import { SVGIcon } from '@/lib/types';
 import { cn } from '@/lib/utils';
 
+
 export default function Icon({ size = 24, className }: SVGIcon) {
   return (
     <svg
