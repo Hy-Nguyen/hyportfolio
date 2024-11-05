@@ -9,8 +9,12 @@ export default function ContactForm() {
         I&apos;m always looking for new opportunities to work on exciting projects. If you have a project in mind or
         just want to say hi, feel free to contact me.
       </p>
-      <div className="flex w-full flex-row gap-6 rounded-lg p-4 bg-main-200">
-        <Image src={ContactIcon} alt="Photo by Filip Zrnzević" className="aspect-square rounded-md w-1/2 object-cover" />
+      <div className="flex w-full flex-row items-center justify-center gap-6 rounded-lg bg-main-200 p-4">
+        <Image
+          src={ContactIcon}
+          alt="Photo by Filip Zrnzević"
+          className="aspect-square w-1/2 rounded-md object-cover"
+        />
         <Form />
       </div>
     </div>
