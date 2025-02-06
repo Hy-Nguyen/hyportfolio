@@ -79,6 +79,8 @@ export default function Form() {
     if (state.success && formRef.current) {
       toast.success(state.message);
       formRef.current.reset();
+    } else if (state.success === false) {
+      toast.error(state.message);
     }
   }, [state]);
 

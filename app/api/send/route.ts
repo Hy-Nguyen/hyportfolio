@@ -1,4 +1,4 @@
-import EmailTemplate from '../../../features/ContactForm/email/outreach-overview';
+import OutreachOverview from '../../../features/ContactForm/email/outreach-overview';
 import OutreachConfirmation from '../../../features/ContactForm/email/outreach-confirmation';
 import { Resend } from 'resend';
 
@@ -11,9 +11,9 @@ export async function POST(req: Request) {
     const { data, error } = await resend.batch.send([
       {
         from: 'Hy Nguyen <hy@hy-nguyen.com>',
-        to: [email],
+        to: ['giahy316@gmail.com'],
         subject: 'Portfolio Outreach',
-        react: EmailTemplate({ firstName, lastName, email, message }),
+        react: OutreachOverview({ firstName, lastName, email, message }),
       },
       {
         from: 'Hy Nguyen <hy@hy-nguyen.com>',

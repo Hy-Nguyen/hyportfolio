@@ -1,13 +1,13 @@
 import { Body, Container, Head, Hr, Html, Preview, Section, Text, Tailwind } from '@react-email/components';
 
-interface OutreachConfirmationProps {
+interface OutreachOverviewProps {
   firstName: string;
   lastName: string;
   email: string;
   message: string;
 }
 
-export default function OutreachConfirmation(props: OutreachConfirmationProps) {
+export default function OutreachOverview(props: OutreachOverviewProps) {
   const { firstName, lastName, email, message } = props;
   return (
     <Tailwind>
