@@ -55,7 +55,7 @@ export default function ProjectDisplay({ project, className }: { project: Projec
           ))}
         </p>
       </div>
-      <div className="flex w-full flex-col gap-2">
+      <div className="flex w-full flex-col gap-2 lg:hidden">
         {project.link.github && (
           <ProjectLinks
             className="w-full rounded-full border bg-main-400 px-4 py-2 transition-all duration-500 ease-in-out"
