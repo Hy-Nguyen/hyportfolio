@@ -8,6 +8,11 @@ export default function Home() {
       <Hero />
       <Projects />
       <ContactForm />
+      <footer className="flex w-full flex-col items-center justify-center gap-4 bg-main-800 p-4">
+        <p className="text-center text-sm font-medium text-main-200">
+          &copy; {new Date().getFullYear()} Hy Nguyen. All rights reserved.
+        </p>
+      </footer>
     </main>
   );
 }

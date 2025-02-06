@@ -19,7 +19,7 @@ export default function ProjectLinks({
       href={link}
       target="_blank"
       className={cn(
-        'group/link relative flex w-1/4 min-w-fit items-center justify-center gap-4 rounded-full bg-main-200 p-2 hover:scale-105 lg:hover:bg-main-100',
+        'group/link relative flex w-1/4 min-w-fit items-center justify-center gap-4 rounded-full p-2 hover:scale-105 lg:hover:bg-main-200',
         className
       )}
     >

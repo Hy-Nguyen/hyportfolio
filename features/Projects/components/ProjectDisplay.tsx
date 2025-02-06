@@ -19,13 +19,13 @@ export default function ProjectDisplay({ project, className }: { project: Projec
           alt={project.name}
           width={800}
           height={800}
-          className="h-fit w-full rounded-lg transition-all duration-200 ease-in-out lg:group-hover:scale-105"
+          className="h-fit w-full rounded-lg transition-all duration-200 ease-in-out"
         />
         {(project.link.github || project.link.live) && (
-          <div className="absolute hidden h-full w-full flex-col items-center justify-center gap-10 rounded-lg transition-all duration-500 ease-in-out group-hover:backdrop-blur-md lg:flex">
+          <div className="absolute -bottom-6 hidden h-fit w-full flex-col items-center justify-center gap-4 rounded-lg px-4 py-2 transition-all duration-500 ease-in-out group-hover:bottom-0 lg:flex lg:flex-row">
             {project.link.github && (
               <ProjectLinks
-                className="opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100"
+                className="w-1/2 bg-white/40 opacity-0 backdrop-blur-sm transition-all duration-500 ease-in-out group-hover:opacity-100"
                 link={project.link.github}
                 icon={<Github />}
                 label="Github"
@@ -33,7 +33,7 @@ export default function ProjectDisplay({ project, className }: { project: Projec
             )}
             {project.link.live && (
               <ProjectLinks
-                className="opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100"
+                className="w-1/2 bg-white/40 opacity-0 backdrop-blur-sm transition-all duration-500 ease-in-out group-hover:opacity-100"
                 link={project.link.live}
                 icon={<Vercel size={20} />}
                 label="See Live"
