@@ -8,6 +8,7 @@ const font = DM_Sans({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Hy Nguyen - Portfolio',
   description: 'Hy Nguyen - Portfolio',
+  
 };
 
 export default function RootLayout({
