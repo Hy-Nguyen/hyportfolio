@@ -20,7 +20,7 @@ export default function HeroDescription() {
         className="w-full lg:w-1/2"
       >
         With just two years of experience, I have worked with start ups all around the world, from the US to Spain and
-        Dubai. I am proud to say that I have been a critical part in building applications from the group up, and have a
+        Dubai. I am proud to say that I have been a critical part in building applications from the ground up, and have a
         proven track record of delivering high-quality code.
       </motion.p>
     </motion.div>
