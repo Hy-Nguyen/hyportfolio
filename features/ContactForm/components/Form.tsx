@@ -83,8 +83,8 @@ export default function Form() {
   }, [state]);
 
   return (
-    <form ref={formRef} action={handleSubmit} className="flex w-1/2 flex-col gap-4">
-      <div className="flex w-full flex-row gap-4">
+    <form ref={formRef} action={handleSubmit} className="flex w-full flex-col gap-4 lg:w-1/2">
+      <div className="flex w-full flex-col gap-4 lg:flex-row">
         <Input type="text" name="firstName" label="First Name" placeholder="John" error={error?.firstName} />
         <Input type="text" name="lastName" label="Last Name" placeholder="Doe" error={error?.lastName} />
       </div>

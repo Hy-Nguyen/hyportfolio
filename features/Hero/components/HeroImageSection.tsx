@@ -9,7 +9,7 @@ export default function HeroImageSection() {
       animate={{ opacity: 1, x: 0, backgroundColor: '#74685a', transition: { duration: 0.7, delay: 1 } }}
       transition={{ duration: 0.5 }}
       whileHover={{ backgroundColor: '#8b7d6b' }}
-      className="flex h-fit w-1/3 rounded-xl p-5"
+      className="hidden h-fit w-full rounded-xl p-5 lg:flex lg:w-1/3"
     >
       <Image
         src={HeroImage}
@@ -20,4 +20,4 @@ export default function HeroImageSection() {
       />
     </motion.div>
   );
-} 
+}

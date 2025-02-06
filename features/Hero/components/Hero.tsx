@@ -10,14 +10,14 @@ export default function Hero() {
   return (
     <section
       id="about"
-      className="flex h-screen w-screen flex-col items-center justify-center bg-main-300 text-zinc-800"
+      className="flex min-h-screen w-screen flex-col items-center justify-center bg-main-300 pb-10 pt-36 text-zinc-800 lg:py-0"
     >
-      <div className="container flex h-fit w-full items-center justify-center gap-10 xl:max-w-screen-xl">
+      <div className="container flex h-fit w-full flex-col items-center justify-center gap-10 lg:flex-row xl:max-w-screen-xl">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5, staggerChildren: 0.1 }}
-          className="flex h-full w-2/3 flex-col items-start justify-center gap-8"
+          className="flex h-full w-full flex-col items-start justify-center gap-4 lg:w-2/3 lg:gap-8"
         >
           <HeroHeader />
           <HeroDescription />
