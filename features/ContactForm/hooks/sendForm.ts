@@ -17,8 +17,13 @@ export async function sendContactForm(
     message: formData.get('message'),
   };
 
+  const BASE_URL = process.env.BASE_URL;
+
   try {
-    console.log(data);
+    await fetch(`${BASE_URL}/api/send`, {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
   } catch (error) {
     console.log(error);
     return { ...prevState, message: 'Something went wrong', success: false };

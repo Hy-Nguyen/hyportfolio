@@ -8,11 +8,11 @@ import HeroImageSection from './HeroImageSection';
 
 export default function Hero() {
   return (
-    <div
-      id="container"
+    <section
+      id="about"
       className="flex h-screen w-screen flex-col items-center justify-center bg-main-300 text-zinc-800"
     >
-      <div className="flex h-fit w-full items-center justify-center gap-10 xl:max-w-screen-xl">
+      <div className="container flex h-fit w-full items-center justify-center gap-10 xl:max-w-screen-xl">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -25,6 +25,6 @@ export default function Hero() {
         </motion.div>
         <HeroImageSection />
       </div>
-    </div>
+    </section>
   );
 }

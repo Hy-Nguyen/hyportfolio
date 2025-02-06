@@ -71,4 +71,9 @@
 html {
   max-width: 100dvw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.email-font {
+  font-family: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif';
 }

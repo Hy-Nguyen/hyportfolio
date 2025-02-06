@@ -45,7 +45,7 @@ export default function ProjectDisplay({ project, className }: { project: Projec
       <div className="flex h-fit w-1/2 flex-col gap-4">
         <h1 className="text-3xl font-bold">{project.name}</h1>
         <p className="min-h-[5lh] text-[1rem] leading-loose">{project.description}</p>
-        <p className="flex gap-1 font-semibold">
+        <p className="flex w-full flex-wrap gap-1 font-semibold">
           Tech:{' '}
           {project.techStack.map((tech, i) => (
             <span className="font-normal" key={i}>

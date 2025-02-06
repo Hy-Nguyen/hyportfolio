@@ -3,6 +3,6 @@ import { z } from 'zod';
 export const contactFormSchema = z.object({
   firstName: z.string().min(1, 'Please enter your first name.'),
   lastName: z.string().min(1, 'Please enter your last name.'),
-  email: z.string().email("Please enter a valid email. I promise I won't spam you!"),
-  message: z.string().min(1, 'Please enter a message. I want to help you!'),
+  email: z.string().email('Please enter a valid email.'),
+  message: z.string().min(1, 'Please enter a message.'),
 });

@@ -3,7 +3,10 @@ import Image from 'next/image';
 import ContactIcon from '@/public/imgs/ContactFormImage.jpg';
 export default function ContactForm() {
   return (
-    <div className="container flex h-fit w-full flex-col items-center justify-around gap-10 p-24 text-zinc-800">
+    <section
+      id="contact"
+      className="container flex h-fit w-full flex-col items-center justify-around gap-10 p-24 text-zinc-800"
+    >
       <h1 className="text-5xl font-bold">Contact Me</h1>
       <p className="w-1/2 text-center text-xl font-medium">
         I&apos;m always looking for new opportunities to work on exciting projects. If you have a project in mind or
@@ -17,6 +20,6 @@ export default function ContactForm() {
         />
         <Form />
       </div>
-    </div>
+    </section>
   );
 }

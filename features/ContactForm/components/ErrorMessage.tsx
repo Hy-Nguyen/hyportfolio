@@ -3,9 +3,10 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 export default function ErrorMessage({ className, children }: { className?: string; children: React.ReactNode }) {
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence>
       {children && (
         <motion.p
+          key={'error-message-' + children}
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
           exit={{ opacity: 0, height: 0 }}

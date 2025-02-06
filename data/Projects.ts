@@ -1,6 +1,7 @@
 import WatchDogs from '@/public/imgs/WatchdogsMockup.png';
 import DailyDraft from '@/public/imgs/DailyDraftMockUp.png';
 import AutoConcepts from '@/public/imgs/360AutoConcepts.png';
+import SourcedTickets from '@/public/imgs/SourcedTickets.png';
 
 export const Projects = [
   {
@@ -34,5 +35,15 @@ export const Projects = [
       live: 'https://www.360autoconcepts.com/',
     },
     techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Resend'],
+  },
+  {
+    name: 'Sourced Tickets',
+    description:
+      'A face uplift for a client that specializes in selling tickets to concerts, events, and more. This project was a great learning experience for working with an existing codebase and integrating with their internal API.',
+    image: SourcedTickets,
+    link: {
+      live: 'https://www.sourcedtickets.com/',
+    },
+    techStack: ['React', 'Javascript', 'Tailwind CSS', 'SCSS', 'Framer Motion'],
   },
 ];
